@@ -1,0 +1,104 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+/* Contêiner principal da paginação */
+.react-paginate {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Cada item da paginação */
+.react-paginate li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Estilo para os números de página */
+.react-paginate li a {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+/* Estilo para a página ativa */
+.react-paginate li.active a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Estilo para os números de página ao passar o mouse */
+.react-paginate li a:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Desativar botões "Anterior" e "Próximo" */
+.react-paginate li.disabled a {
+  color: #999;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Estilo para o botão "Anterior" e "Próximo" */
+.react-paginate li.previous a,
+.react-paginate li.next a {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #007bff;
+  border-radius: 4px;
+}
+
+/* Estilo para o botão "Anterior" e "Próximo" ao passar o mouse */
+.react-paginate li.previous a:hover,
+.react-paginate li.next a:hover {
+  background-color: #0056b3;
+  color: white;
+}
